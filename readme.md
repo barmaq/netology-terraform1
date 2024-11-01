@@ -1,3 +1,7 @@
+
+#################   #################   #################   
+ЧАСТЬ 1
+
 журнал работ в файле, там приведена подробная очередность команд и вывода  
 [журнал](/res/домашнее1.txt)  
   
@@ -80,3 +84,38 @@ https://docs.comcloud.xyz/providers/kreuzwerker/docker/latest/docs/resources/ima
   
 "Optional  
 keep_locally (Boolean) If true, then the Docker image won't be deleted on destroy operation. If this is false, it will delete the image from the docker local storage on destroy operation."  
+
+
+#################   
+ЧАСТЬ 2  
+журнал работ в файле, там приведена подробная очередность команд и вывода  
+[журнал2](/res/домашнее2.txt) 
+  
+1)  
+проверьте наличие секретных env-переменных с помощью команды env. Запишите ваш финальный код в репозиторий.
+  
+финальный код :  
+[задача 2**](/res/main.tf(2)) 
+
+содержимое env в контейнере ( виртуалка удалена, светить паролями можно смело ):
+  
+bash-5.1# env  
+MYSQL_MAJOR=8.4  
+HOSTNAME=a72c68867ea4  
+PWD=/  
+MYSQL_ROOT_PASSWORD=[xJ*([yt}VN{3#p  
+MYSQL_PASSWORD=aT=mpj=<LM{BtSe  
+MYSQL_USER=wordpress  
+HOME=/root  
+MYSQL_VERSION=8.4.3-1.el9  
+GOSU_VERSION=1.17  
+TERM=xterm  
+MYSQL_ROOT_HOST=%  
+SHLVL=1  
+MYSQL_DATABASE=wordpress  
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin  
+MYSQL_SHELL_VERSION=8.4.3-1.el9  
+_=/usr/bin/env  
+
+
+

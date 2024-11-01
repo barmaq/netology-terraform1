@@ -44,3 +44,43 @@ provider "yandex" {
 добавляем ключ в ssh агент на винде ( запущен службой )
 ssh-add C:\Users\victorsh\Dropbox\учеба\ключи\ycbarmaq.rsa
 
+
+если возникают проблемы 6
+https://yandex.cloud/ru/docs/troubleshooting/terraform/known-issues/failed-to-quety-available-provider-packages
+terraform init -upgrade
+tarraform plan
+terraform apply
+
+теперь наполняем конфиг по заданию. переменные enviroment передаются при помощи 
+ env = [ "par1","par2"]
+
+tarraform plan
+terraform apply
+ 
+docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED              STATUS              PORTS                               NAMES
+a72c68867ea4   b7aff0191ea5   "docker-entrypoint.s…"   About a minute ago   Up About a minute   0.0.0.0:3306->3306/tcp, 33060/tcp   mysql_container
+
+docker exec -ti mysql_container /bin/bash
+
+bash-5.1# env
+MYSQL_MAJOR=8.4
+HOSTNAME=a72c68867ea4
+PWD=/
+MYSQL_ROOT_PASSWORD=[xJ*([yt}VN{3#p
+MYSQL_PASSWORD=aT=mpj=<LM{BtSe
+MYSQL_USER=wordpress
+HOME=/root
+MYSQL_VERSION=8.4.3-1.el9
+GOSU_VERSION=1.17
+TERM=xterm
+MYSQL_ROOT_HOST=%
+SHLVL=1
+MYSQL_DATABASE=wordpress
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+MYSQL_SHELL_VERSION=8.4.3-1.el9
+_=/usr/bin/env
+
+прибираемся
+terraform destroy
+
